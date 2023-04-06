@@ -1,6 +1,6 @@
 import React from "react";
 import LoginButton from "../components/buttons/login-button";
-export default function HomePage() {
+export const HomePage = () => {
     return (
         <>
             <h1>Hey from HomePage</h1>
