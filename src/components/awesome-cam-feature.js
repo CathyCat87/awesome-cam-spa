@@ -1,5 +1,5 @@
 import React from "react";
-export const Auth0Feature = ({ title, description, resourceURL, icon }) =>(
+export const AwesomeCamFeature = ({ title, description, resourceURL, icon }) =>(
   <a href={ resourceURL }
      className="auth0-feature"
      target="_blank"
