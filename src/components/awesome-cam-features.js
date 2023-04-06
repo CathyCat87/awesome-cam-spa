@@ -35,7 +35,9 @@ export const AwesomeCamFeatures = () => {
 
     return (
         <div className="auto-features">
-            <h2 className="auth0-features__title">Explore Awesome Cam Features</h2>
+            <br />
+            <br />
+            <h2 className="auth0-features__title">Explore Awesome-Cam's Awesome Features</h2>
             <div className="auth0-features__grid">
                 { featuresList.map((feature) => (
                     <AwesomeCamFeature
