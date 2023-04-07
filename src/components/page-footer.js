@@ -27,19 +27,21 @@ export const PageFooter = () => {
               <div className="page-footer-grid__info">
                   <div className="page-footer-info__message">
                       <p className="page-footer-message__headline">
-                          <span>Awesome-Cam is brought to you by&nbsp;</span>
-                          <PageFooterHyperlink path="https://www.google.com/search?q=todo">
+                          <span>Awesome-cam has been brought to you by&nbsp;</span>
+                          <PageFooterHyperlink path="https://www.linkedin.com/in/cathy-zeng-earnshaw-59701283/">
                               Cathy Zeng-Earnshaw
-                          </PageFooterHyperlink>
+                          </PageFooterHyperlink>.
                       </p>
                   </div>
+
                   <div className="page-footer-info__resource-list">
                       {resourceList.map((resource) => (
                           <div
-                              key={ resource.path }
-                              className="page-footer-info__resource-list-item">
-                              <PageFooterHyperlink path={ resource.path }>
-                                  { resource.label }
+                              key={resource.path}
+                              className="page-footer-info__resource-list-item"
+                          >
+                              <PageFooterHyperlink path={resource.path}>
+                                  {resource.label}
                               </PageFooterHyperlink>
                           </div>
                       ))}
@@ -54,8 +56,8 @@ export const PageFooter = () => {
                           width="20"
                           height="22.22"
                       />
-                      <PageFooterHyperlink path="https://www.google.com/search?q=todo">
-                          TODO Inc
+                      <PageFooterHyperlink path="https://auth0.com/">
+                          TODO
                       </PageFooterHyperlink>
                   </div>
               </div>
