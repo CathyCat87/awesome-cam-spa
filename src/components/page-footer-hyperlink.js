@@ -5,8 +5,7 @@ export const PageFooterHyperlink = ({ children, path }) =>{
           className="page-footer__hyperlink"
           href={ path }
           target="_blank"
-          rel="noopener noreferrer"
-          >
+          rel="noopener noreferrer">
           { children }
       </a>
   );
