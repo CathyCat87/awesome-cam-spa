@@ -15,5 +15,4 @@ export const NavBarBrand = () => {
             </NavLink>
         </div>
     );
-
 };
