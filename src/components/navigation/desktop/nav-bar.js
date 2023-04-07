@@ -6,11 +6,11 @@ import {NavBarButtons} from "./nav-bar-buttons";
 export const NavBar = () => {
     return (
         <div className="nav-bar__container">
-            <div className="nav-bar">
+            <nav className="nav-bar">
                 <NavBarBrand />
                 <NavBarTabs />
                 <NavBarButtons />
-            </div>
+            </nav>
         </div>
     );
 };
