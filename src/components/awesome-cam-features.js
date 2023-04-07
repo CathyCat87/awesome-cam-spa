@@ -37,8 +37,8 @@ export const AwesomeCamFeatures = () => {
         <div className="auto-features">
             <br />
             <br />
-            <h2 className="auth0-features__title">Explore Awesome-Cam's Awesome Features</h2>
-            <div className="auth0-features__grid">
+            <h2 className="awesome-cam-features__title">Explore Awesome-Cam's Awesome Features</h2>
+            <div className="awesome-cam-features__grid">
                 { featuresList.map((feature) => (
                     <AwesomeCamFeature
                         key={feature.resourceUrl}
