@@ -1,5 +1,6 @@
 import React from "react";
 import {MobileNavBarBrand} from "./mobile-nav-bar-brand";
+import {MobileMenuToggleButton} from "./mobile-menu-toggle-button";
 
 const MobileMenuState = {
     CLOSED: "closed",
@@ -21,10 +22,30 @@ export const MobileNavBar = () => {
         setMobileMenuIcon(MobileMenuIcon.MENU);
     };
 
+    const openMobileMenu = () => {
+        document.body.classList.add("mobile-scroll-lock");
+        setMobileMenuState(MobileMenuState.OPEN);
+        setMobileMenuIcon(MobileMenuIcon.CLOSE);
+    };
+
+    const isMobileMenuOpen = () => {
+        return mobileMenuState === MobileMenuState.OPEN;
+    }
+    const toggleMobileMenu = () =>  {
+        if (isMobileMenuOpen())
+            closeMobileMenu();
+        else
+            openMobileMenu();
+    };
+
     return (
         <div className="mobile-nav-bar__container">
             <nav className="mobile-nav-bar">
                 <MobileNavBarBrand handleClick={ closeMobileMenu } />
+                <MobileMenuToggleButton
+                    icon={ mobileMenuIcon }
+                    handleClick={ toggleMobileMenu }
+                />
             </nav>
         </div>
     );
