@@ -1,7 +1,9 @@
 import React from "react";
-import { MobileNavBarBrand } from "./mobile-nav-bar-brand";
+
 import { MobileMenuToggleButton } from "./mobile-menu-toggle-button";
+import { MobileNavBarBrand } from "./mobile-nav-bar-brand";
 import { MobileNavBarButtons } from "./mobile-nav-bar-buttons";
+import { MobileNavBarTabs } from "./mobile-nav-bar-tabs";
 
 const MobileMenuState = {
     CLOSED: "closed",
@@ -51,6 +53,7 @@ export const MobileNavBar = () => {
 
                 {isMobileMenuOpen() && (
                     <div className="mobile-nav-bar__menu">
+                        <MobileNavBarTabs handleClick={ closeMobileMenu } />
                         <MobileNavBarButtons />
                     </div>
                 )}
