@@ -1,7 +1,7 @@
 import React from "react";
-import {MobileNavBarBrand} from "./mobile-nav-bar-brand";
-import {MobileMenuToggleButton} from "./mobile-menu-toggle-button";
-import {MobileNavBarButtons} from "./mobile-nav-bar-buttons";
+import { MobileNavBarBrand } from "./mobile-nav-bar-brand";
+import { MobileMenuToggleButton } from "./mobile-menu-toggle-button";
+import { MobileNavBarButtons } from "./mobile-nav-bar-buttons";
 
 const MobileMenuState = {
     CLOSED: "closed",
@@ -14,12 +14,8 @@ const MobileMenuIcon = {
 };
 
 export const MobileNavBar = () => {
-    const [mobileMenuState, setMobileMenuState] = React.useState(
-        MobileMenuState.CLOSED
-    );
-    const [mobileMenuIcon, setMobileMenuIcon] = React.useState(
-        MobileMenuIcon.MENU
-    );
+    const [ mobileMenuState, setMobileMenuState ] = React.useState( MobileMenuState.CLOSED );
+    const [mobileMenuIcon, setMobileMenuIcon] = React.useState( MobileMenuIcon.MENU );
 
     const isMobileMenuOpen = () => {
         return mobileMenuState === MobileMenuState.OPEN;
@@ -38,11 +34,10 @@ export const MobileNavBar = () => {
     };
 
     const toggleMobileMenu = () => {
-        if (isMobileMenuOpen()) {
+        if (isMobileMenuOpen())
             closeMobileMenu();
-        } else {
+        else
             openMobileMenu();
-        }
     };
 
     return (
