@@ -10,13 +10,13 @@ export const NavBarButtons = () => {
 
     return (
         <div className="nav-bar__buttons">
-            {!isAuthenticated && (
+            { !isAuthenticated && (
                 <>
                     <SignupButton />
                     <LoginButton />
                 </>
             )}
-            {isAuthenticated && (
+            { isAuthenticated && (
                 <>
                     <LogoutButton />
                 </>
