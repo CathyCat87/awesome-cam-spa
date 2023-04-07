@@ -15,7 +15,7 @@ const MobileMenuIcon = {
 
 export const MobileNavBar = () => {
     const [ mobileMenuState, setMobileMenuState ] = React.useState( MobileMenuState.CLOSED );
-    const [mobileMenuIcon, setMobileMenuIcon] = React.useState( MobileMenuIcon.MENU );
+    const [ mobileMenuIcon, setMobileMenuIcon ] = React.useState( MobileMenuIcon.MENU );
 
     const isMobileMenuOpen = () => {
         return mobileMenuState === MobileMenuState.OPEN;
@@ -23,14 +23,14 @@ export const MobileNavBar = () => {
 
     const closeMobileMenu = () => {
         document.body.classList.remove("mobile-scroll-lock");
-        setMobileMenuState(MobileMenuState.CLOSED);
-        setMobileMenuIcon(MobileMenuIcon.MENU);
+        setMobileMenuState( MobileMenuState.CLOSED );
+        setMobileMenuIcon( MobileMenuIcon.MENU );
     };
 
     const openMobileMenu = () => {
         document.body.classList.add("mobile-scroll-lock");
-        setMobileMenuState(MobileMenuState.OPEN);
-        setMobileMenuIcon(MobileMenuIcon.CLOSE);
+        setMobileMenuState( MobileMenuState.OPEN );
+        setMobileMenuIcon( MobileMenuIcon.CLOSE );
     };
 
     const toggleMobileMenu = () => {
