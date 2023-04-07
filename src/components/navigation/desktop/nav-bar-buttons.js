@@ -9,21 +9,18 @@ export const NavBarButtons = () => {
     const { isAuthenticated } = useAuth0();
 
     return (
-      <div className="nav-bar__buttons">
-          { !isAuthenticated && (
-              <>
-                  <SignupButton />
-                  <LoginButton/>
-              </>
-          )}
-          { isAuthenticated && (
-              <>
-                  <LogoutButton />
-              </>
-          )}
-
-
-
-      </div>
+        <div className="nav-bar__buttons">
+            {!isAuthenticated && (
+                <>
+                    <SignupButton />
+                    <LoginButton />
+                </>
+            )}
+            {isAuthenticated && (
+                <>
+                    <LogoutButton />
+                </>
+            )}
+        </div>
     );
 };
