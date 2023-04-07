@@ -8,11 +8,7 @@ export const PageLayout = ({ children }) => {
     return (
         <div className="page-layout">
             <NavBar />:q
-:q
 
-
-
-:Q
             { children }
             <PageFooter />
         </div>
