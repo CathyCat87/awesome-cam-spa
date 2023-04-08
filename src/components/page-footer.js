@@ -51,13 +51,13 @@ export const PageFooter = () => {
                   <div className="page-footer-brand">
                       <img
                           className="page-footer-brand__logo"
-                          src="https://cdn.auth0.com/blog/hello-auth0/auth0-shield.svg"
-                          alt="Auth0"
+                          src="./linked-camera.svg"
+                          alt="Awesome-Cam"
                           width="20"
                           height="22.22"
                       />
-                      <PageFooterHyperlink path="https://auth0.com/">
-                          TODO
+                      <PageFooterHyperlink path="https://www.awesome-cam.ca">
+                          Awesome-Cam
                       </PageFooterHyperlink>
                   </div>
               </div>
