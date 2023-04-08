@@ -5,13 +5,15 @@ export const NavBarBrand = () => {
     return (
         <div className="nav-bar__brand">
             <NavLink to="/">
+                <span className="messages-grid__header">
                 <img
                     className="nav-bar__logo"
-                    src="https://cdn.auth0.com/blog/hub/code-samples/hello-world/auth0-logo.svg"
-                    alt="Auth0 shield logo"
-                    width="122"
+                    src="./linked-camera.svg"
+                    alt="Awesome-cam Camera Logo"
+                    width="36"
                     height="36"
                 />
+                Awesome-Cam</span>
             </NavLink>
         </div>
     );
