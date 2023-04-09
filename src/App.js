@@ -5,7 +5,9 @@ import { Route, Routes } from "react-router-dom";
 import { PageLoader } from "./components/page-loader";
 import { AuthenticationGuard } from "./components/authentication-guard";
 
-import { HomePage } from "./pages/HomePage";
+import { DashboardPage } from "./pages/dashboard-page";
+import { HomePage } from "./pages/home-page";
+
 
 export const App = () =>{
   const { isLoading } = useAuth0();
@@ -23,35 +25,13 @@ export const App = () =>{
             path="/"
             element={ <HomePage /> }
         />
+        <Route
+            path="/dashboard"
+            element={
+            <AuthenticationGuard component={ DashboardPage } />
+            }
+        />
+
     </Routes>
   );
 };
-
-
-/*import React from "react";
-import { Route, Routes } from "react-router-dom";
-// We will create these two pages in a moment
-
-import DashboardPage from "./pages/DashboardPage";
-import { HomePage } from "./pages/HomePage";
-import LogoutPage from "./pages/LogoutPage";
-import UserPage from "./pages/UserPage";
-
-import { AuthenticationGuard } from "./components/authentication-guard";
-
-export default function App() {
-  return (
-      <Routes>
-          <Route exact
-                 path="/"
-                 element={ HomePage } />
-          <Route path="/dashboard"
-                 element={<AuthenticationGuard component={ DashboardPage } />}
-          />
-          <Route path="/profile"
-                 element={<AuthenticationGuard component={ UserPage } />}
-          />
-          <Route path="/logout" element={ LogoutPage } />
-      </Routes>
-  );
-}*/
