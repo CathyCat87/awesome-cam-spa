@@ -1,6 +1,6 @@
 import React from "react";
 //import { useParams } from "react-router-dom";
-export default function UserPage() {
+export default function ProfilePage() {
 //    let { id } = useParams();
     return (
         <>
