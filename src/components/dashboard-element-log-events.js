@@ -1,9 +1,9 @@
 import React from "react";
 
-export const dashboardElementLogEvents = () =>{
+export const DashboardElementLogEvents = () =>{
     return (
         <div>
-            Events Log
+
         </div>
     );
 };

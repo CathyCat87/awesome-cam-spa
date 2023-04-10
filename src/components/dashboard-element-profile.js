@@ -1,6 +1,6 @@
 import React from "react";
 
-export const dashboardElementProfile = () => {
+export const DashboardElementProfile = () => {
 
     return (
         <div>
