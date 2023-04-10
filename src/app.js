@@ -8,6 +8,7 @@ import { AuthenticationGuard } from "./components/authentication-guard";
 import { DashboardPage } from "./pages/dashboard-page";
 import { HomePage } from "./pages/home-page";
 import { ProfilePage } from "./pages/profile-page";
+import { ReferencesPage } from "./pages/references-page";
 
 
 export const App = () =>{
@@ -33,6 +34,10 @@ export const App = () =>{
         <Route
             path="/profile"
             element={ <AuthenticationGuard component={ ProfilePage } /> }
+        />
+        <Route
+            path="/references"
+            element={ <ReferencesPage /> }
         />
     </Routes>
   );
