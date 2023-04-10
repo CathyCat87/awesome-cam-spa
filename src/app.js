@@ -7,6 +7,7 @@ import { AuthenticationGuard } from "./components/authentication-guard";
 
 import { DashboardPage } from "./pages/dashboard-page";
 import { HomePage } from "./pages/home-page";
+import { ProfilePage } from "./pages/profile-page";
 
 
 export const App = () =>{
@@ -27,11 +28,12 @@ export const App = () =>{
         />
         <Route
             path="/dashboard"
-            element={
-            <AuthenticationGuard component={ DashboardPage } />
-            }
+            element={ <AuthenticationGuard component={ DashboardPage } /> }
         />
-
+        <Route
+            path="/profile"
+            element={ <AuthenticationGuard component={ ProfilePage } /> }
+        />
     </Routes>
   );
 };
