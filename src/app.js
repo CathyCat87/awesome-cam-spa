@@ -7,6 +7,7 @@ import { AuthenticationGuard } from "./components/authentication-guard";
 
 import { DashboardPage } from "./pages/dashboard-page";
 import { HomePage } from "./pages/home-page";
+import { NotFoundPage } from "./pages/not-found-page";
 import { ProfilePage } from "./pages/profile-page";
 import { ReferencesPage } from "./pages/references-page";
 
@@ -38,6 +39,10 @@ export const App = () =>{
         <Route
             path="/references"
             element={ <ReferencesPage /> }
+        />
+        <Route
+            path="/*"
+            element={ <NotFoundPage /> }
         />
     </Routes>
   );
