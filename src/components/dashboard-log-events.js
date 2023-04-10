@@ -1,6 +1,6 @@
 import React from "react";
 
-export const DashboardElementLogEvents = () =>{
+export const DashboardLogEvents = () =>{
     return (
         <div>
 
