@@ -1,7 +1,7 @@
 import React from "react";
 import { PageLayout } from "../components/page-layout";
 //import { useParams } from "react-router-dom";
-export default function ProfilePage() {
+export const ProfilePage = () => {
 //    let { id } = useParams();
     return (
         <PageLayout>
