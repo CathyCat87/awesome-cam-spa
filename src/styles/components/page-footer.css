@@ -1,5 +1,5 @@
 .page-footer {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     flex-shrink: 0;
 
@@ -17,6 +17,8 @@
 
     font-size: 1.6rem;
     line-height: 2.4rem;
+
+
 }
 
 .page-footer-grid {
@@ -24,8 +26,6 @@
     grid-template-rows: auto auto;
 
     width: 100%;
-    max-width: 120rem;
-
     /* responsive */
 
     padding: 3.2rem;

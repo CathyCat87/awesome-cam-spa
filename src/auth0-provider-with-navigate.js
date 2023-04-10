@@ -14,7 +14,7 @@ export const Auth0ProviderWithNavigate = ({ children }) => {
         //navigate( appState?.returnTo || window.location.pathname );
     };
 
-    if (!(domain && clientId && redirectUri)) {
+    if (!( domain && clientId && redirectUri )) {
         return null;
     }
 
@@ -26,7 +26,7 @@ export const Auth0ProviderWithNavigate = ({ children }) => {
                 redirect_uri: redirectUri,
             }}
             onRedirectCallback={ onRedirectCallback }>
-            {children}
+            { children }
         </Auth0Provider>
     );
 };
