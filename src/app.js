@@ -41,7 +41,7 @@ export const App = () =>{
             element={ <ReferencesPage /> }
         />
         <Route
-            path="/*"
+            path="*"
             element={ <NotFoundPage /> }
         />
     </Routes>
