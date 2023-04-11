@@ -17,7 +17,6 @@ export const DashboardPage = () => {
 
     return (
         <PageLayout>
-            <h1>Hey from Dashboard</h1>
             <div class="container">
                 <div class="row">
                     <DashboardLiveVideo />
@@ -27,6 +26,7 @@ export const DashboardPage = () => {
                     <DashboardLogEvents />
                 </div>
             </div>
+
         </PageLayout>
     );
 }
