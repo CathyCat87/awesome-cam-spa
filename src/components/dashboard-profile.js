@@ -3,7 +3,7 @@ import React from "react";
 export const DashboardProfile = () => {
 
     return (
-        <div>
+        <div className="col">
             Profile
         </div>
     );

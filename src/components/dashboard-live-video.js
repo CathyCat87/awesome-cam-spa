@@ -2,7 +2,7 @@ import React from "react";
 
 export const DashboardLiveVideo = () => {
     return (
-        <div>
+        <div className="col">
             LIVE VIDEO
         </div>
     );

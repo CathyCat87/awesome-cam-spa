@@ -2,7 +2,7 @@ import React from "react";
 
 export const DashboardCameraStatus = () => {
     return (
-        <div>
+        <div className="col">
             Camera Status
         </div>
     );
