@@ -1,10 +1,13 @@
 import React from "react";
 
+const camera_stream = process.env.REACT_APP_VIDEO_STREAM_URL+"/stream.mjpg";
+
 export const DashboardLiveVideo = () => {
+    console.log(camera_stream);
     return (
         <div className="col-md-3">
             LIVE VIDEO
-            <img src="http://192.168.2.54:8000/stream.mjpg" width="100%" />
+            <img src={ camera_stream } width="100%" />
         </div>
     );
 };
